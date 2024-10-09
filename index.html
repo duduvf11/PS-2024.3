@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Palavras Cafeinadas</title>
 </head>
 <body>
     <div class="div-navbar">
         <nav class="navbar">
-            <div class="navbar-leftBtns">
-                <button>Sobre Nós</button>
-                <button> Cafeteria</button>
+            <div class="navbar-left-buttons">
+                <button class="navbar-button">Sobre Nós</button>
+                <button class="navbar-button"> Cafeteria</button>
             </div>
             <div class="navbar-icon">
                 <img src="./static/Logo (1).svg" alt="icone da navbar">
             </div>
-            <div class="navbar-rightBtns">
-                <button>Contato</button>
-                <button><img src="./static/Icon - Phone.svg" alt="telephone-icon">19-991256972</button>
+            <div class="navbar-right-buttons">
+                <button class="navbar-button">Contato</button>
+                <div class="navbar-button-contato">
+                    <img src="./static/Icon - Phone.svg"alt="telephone-icon">   
+                    <button class="navbar-button">19-991256972</button>
+                </div>
             </div>
         </nav>
     </div>
@@ -54,33 +57,32 @@
         </div>
     </div>
     <div class="div-contato">
-        <div class="contato-texts">
-            <h1>ENTRE EM CONTATO</h1>
-        </div>
-        <div class="contato-forms">
-            <div>
-                <p><img src="./static/telephone-vector.png" alt="icon-telephone">19-991256972</p>
-                <p><img src="./static/email-vector.png" alt="icon-email">contato@gmail.com</p>
-                <p><img src="./static/map-vector.png" alt="icon-map">Av. Paulista, 1324 - Bela Vista, São Paulo - SP, 01310-100
-                </p>
-                <p><img src="./static/instagram-vector.png" alt="icon-instagram">@palavrascafeinadas</p>
-                <p><img src="./static/facebook-vector.png" alt="icon-facebook">Palavras Cafeinadas</p>
-                <div>
-                    <img src="./static/logo_branca palavras.svg" alt="icon-palavras-cafeinadas">
+            <div class="contato-texts">
+                <h1>ENTRE EM CONTATO</h1>
+            </div>
+            <div class="contato container"> 
+                <div class="contato-links">
+                    <p><img src="./static/telephone-vector.png" alt="icon-telephone">19-991256972</p>
+                    <p><img src="./static/email-vector.png" alt="icon-email">contato@gmail.com</p>
+                    <p><img src="./static/map-vector.png" alt="icon-map">Av. Paulista, 1324 - Bela Vista, São Paulo - SP, 01310-100</p>
+                    <p><img src="./static/instagram-vector.png" alt="icon-instagram">@palavrascafeinadas</p>
+                    <p><img src="./static/facebook-vector.png" alt="icon-facebook">Palavras Cafeinadas</p>
+                    <div>
+                        <img src="./static/logo_branca palavras.svg" alt="icon-palavras-cafeinadas">
+                    </div>
+                </div>
+                <div class="contato-forms">
+                    <form>
+                        <label for="Nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="Email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                        <label for="Mensagem">Mensagem</label>
+                        <input type="text" name="mensagem" id="mensagem">
+                        <button class="contato-button">Enviar Mensagem<img src="./static/Union.svg" alt="seta-icon"></button>
+                    </form>
                 </div>
             </div>
-            <div>
-            <form>
-                <label for="Nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="Email">E-mail</label>
-                <input type="email" name="email" id="email">
-                <label for="Mensagem">Mensagem</label>
-                <input type="text" name="mensagem" id="mensagem">
-                <button class="contato-button">Enviar Mensagem<img src="" alt="seta-icon"></button>
-            </form>
-            </div>
-        </div>
     </div>
     <div class="div-footer">
         <footer>
