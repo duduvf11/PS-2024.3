@@ -51,10 +51,20 @@ body{
     align-items: center;
 }
 
-.navbar-button-contato button{  
-   padding: 0rem 0rem 0.45rem 0.45rem; 
-   border: none;
-   cursor: pointer;
+.navbar-button-contato a{  
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 18px;
+
+    padding: 0rem 0rem 0.45rem 0.45rem; 
+    border: none;
+    cursor: pointer;
+    color: #F0F0F0;
+
+    padding-bottom: 0.15rem;
+    cursor: pointer;
+    text-decoration: none;
+    
 }
 
 .navbar-left-buttons{
@@ -294,7 +304,7 @@ body{
     width: 313px;
 }
 
-.cafeteria-card p,  h3, img{
+.cafeteria-card p,  .cafeteria-card h3, .cafeteria-card img{
     margin: 0 16px;
 }
 
@@ -492,6 +502,10 @@ body{
     display: none; /* O ícone do menu só aparece em telas pequenas */
 }
 
+.mobile-menu{
+    display: none;
+}
+
 /* Contatos - Mobile */
 
 .div-contatos-mobile{
@@ -504,8 +518,16 @@ body{
         background-color: #F0F0F0;
     }
 
+    /* Menu - Mobile */
+    
     .menu-icon {
         display: block;
+    }
+    
+    .menu-button{
+        background-color: transparent;
+        margin: 0 1rem 0 2rem;
+        cursor: pointer;
     }
 
     .navbar-left-buttons, .navbar-right-buttons {
@@ -514,7 +536,7 @@ body{
 
     .navbar{
         justify-content: flex-end;
-        gap: 3rem;
+        gap: 4rem;
     }
 
     /* Header - Mobile */
