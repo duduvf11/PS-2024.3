@@ -542,6 +542,10 @@ body{
 
     /* Sobre Nós - Mobile */
 
+    .div-sobrenos{
+        width: auto;
+    }
+
     .div-sobrenos h1{
         font-family: "Cormorant Garamond", serif;
         font-size: 24px;
@@ -574,7 +578,7 @@ body{
     }
 
     .sobrenos-texts{
-        margin-right: 15%;
+        margin-right: 0%;
         padding: 0% 5% 0% 0%;
     }
 
@@ -620,6 +624,7 @@ body{
         line-height: 42px;
         letter-spacing: 0.02em;
         text-align: left;
+        margin: 1% 0 2% 5%
 
     }
 
