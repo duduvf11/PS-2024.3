@@ -126,6 +126,11 @@ body{
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
+.header-button:hover{
+    transition: 1s;
+    background-color: #CA8E67;
+}
+
 .header-button img{
     margin-left: 1rem;
 }
@@ -190,6 +195,11 @@ body{
     justify-content: space-between;
     padding: 0.5rem 1rem 0.5rem 1rem;
     cursor: pointer;
+}
+
+.sobrenos-button:hover{
+    transition: 1s;
+    background-color: #CA8E67;
 }
 
 .sobrenos-button img{
@@ -340,6 +350,11 @@ body{
     padding: 0.5rem 1rem 0.5rem 1rem;
 
     max-width: fit-content;
+}
+
+.contato-forms button:hover{
+    transition: 1s;
+    background-color: #CA8E67;
 }
 
 .contato-forms button img{
