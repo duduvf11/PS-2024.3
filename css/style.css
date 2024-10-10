@@ -42,6 +42,7 @@ body{
     color: #F0F0F0;
     padding-bottom: 0.15rem;
     cursor: pointer;
+    text-decoration: none;
     
 }
 
@@ -583,6 +584,7 @@ body{
     .sobrenos-texts{
         margin-right: 0%;
         padding: 0% 5% 0% 0%;
+        height: 30rem;
     }
 
     .sobrenos-texts p{
