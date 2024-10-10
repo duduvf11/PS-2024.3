@@ -319,7 +319,7 @@ body{
 .contato{
     display: grid;
     grid-template-columns: 5fr 7fr;
-    margin: 0 20% 5% 10%;
+    margin: 0 20% 5% 5%;
     border-radius: 0.6rem;
     box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 0.10);
     filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
@@ -330,7 +330,7 @@ body{
     font-weight: 700;
     font-size: 40px;
 
-    margin: 3% 0 2% 10%;
+    margin: 3% 0 2% 5%;
 
 }
 
