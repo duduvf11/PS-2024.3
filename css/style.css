@@ -13,8 +13,6 @@ body{
 .container{
     box-sizing: border-box;
     max-width: 75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,6 +41,7 @@ body{
     background-color: transparent;
     color: #F0F0F0;
     padding-bottom: 0.15rem;
+    cursor: pointer;
     
 }
 
@@ -54,6 +53,7 @@ body{
 .navbar-button-contato button{  
    padding: 0rem 0rem 0.45rem 0.45rem; 
    border: none;
+   cursor: pointer;
 }
 
 .navbar-left-buttons{
@@ -77,11 +77,10 @@ body{
 .div-header {
     background: no-repeat url(../static/BackGround.svg);
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 3fr 6fr;
-    padding: 5%;
-
+    padding: 5% 0% 5% 5%;
 }
 
 .header-texts h1{
@@ -119,6 +118,7 @@ body{
     background-color: #8F542E;
     color: #F0F0F0;
     border-radius: 0.5rem;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -189,6 +189,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .sobrenos-button img{
@@ -230,19 +231,148 @@ body{
 .contato{
     display: grid;
     grid-template-columns: 5fr 7fr;
+    margin: 0 20% 5% 10%;
+    border-radius: 0.6rem;
+    box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 0.10);
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
 }
 
-.contato-texts{
+.contato-texts h1{
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     font-size: 40px;
 
+    margin: 1% 0 2% 10%;
+
 }
 
 .contato-links{
+    background-color: #8F542E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+.contato-links p{
     font-family: "Open Sans", serif;
     font-weight: 700;
     font-size: 18px;
     color: #F0F0F0;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+
+}
+
+.contato-links-adress{
+    border-bottom: solid 2px #B2784A;
+    padding-bottom: 2rem;
+}
+
+.contato-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10rem 0 0 0;
+}
+
+.contato-forms{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 2rem 7rem;
+}
+
+.contato-forms form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contato-forms label{
+    font-family: "Open Sans", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #1F0C00;
+    margin: 1rem 1rem 1rem 0;
+
+}
+
+.contato-forms input{
+    width: 80%;
+    height: 70px;
+
+    border: solid 1px #8F542E;
+    border-radius: 0.4rem;
+}
+
+#mensagem{
+    height: 140px;
+    margin-bottom: 2rem;
+}
+
+.contato-forms button{
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+
     background-color: #8F542E;
+    color: #F0F0F0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+    max-width: fit-content;
+}
+
+.contato-forms button img{
+    margin-left: 1rem;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    width: auto;
+    height: 75px;
+    background-color: #57290B;
+    justify-content: space-between;
+}
+
+.footer h3{
+    display: inline-flex;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFDAB8;
+    align-items: center;
+}
+
+#footer-left{
+    padding-left: 10%;
+}
+
+#footer-right{
+    float: right;
+    padding-right: 10%;
 }
