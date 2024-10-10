@@ -12,7 +12,7 @@
         <nav class="navbar">
             <div class="navbar-left-buttons">
                 <button class="navbar-button">Sobre Nós</button>
-                <button class="navbar-button"> Cafeteria</button>
+                <button class="navbar-button">Cafeteria</button>
             </div>
             <div class="navbar-icon">
                 <img src="./static/Logo (1).svg" alt="icone da navbar">
@@ -20,9 +20,13 @@
             <div class="navbar-right-buttons">
                 <button class="navbar-button">Contato</button>
                 <div class="navbar-button-contato">
-                    <img src="./static/Icon - Phone.svg"alt="telephone-icon">   
+                    <img src="./static/Icon - Phone.svg" alt="telephone-icon">   
                     <button class="navbar-button">19-991256972</button>
                 </div>
+            </div>
+            <!-- Ícone do menu mobile -->
+            <div class="menu-icon">
+                <img src="./static/Menu-mob.svg" alt="Menu">
             </div>
         </nav>
     </div>
@@ -47,19 +51,39 @@
                     <button class="sobrenos-button">Fale Conosco<img src="./static/Union.svg" alt="seta-icon"></button>
                 </div>
             </div>
-                <img src="./static/Mask group.png" alt="cafes em circulos">
+                <img src="./static/Mask group.png" alt="cafes em circulos" id="sobrenos-xicaras">
         </div>
 
     </div>
     <div class="div-cafe-onda">
         <img src="./static/Cafe onda.png" alt="cafe-onda">
-    </div>
-    <div class="div-cafeteria">
-        <div class="cafeteria-texts">
-            <h1>CAFETERIA</h1>
+    </div>  
+    <div class="cafeteria">
+        <div class="cafeteria-title">
+            <h2>CAFETERIA</h2>
         </div>
-        <div class="cafeteria-carrossel">
-            <img src="" alt="carrossel">
+        <div class="carrossel">
+            <div class="arrow-left"><button><img src="./static/Flecha anterior.svg" alt="seta para esquerda"></button></div>
+            <div class="content">
+                <div class="cafeteria-card">
+                    <img src="./static/img1.svg" alt="">
+                    <h3>Bolo De Capuccino</h3>
+                    <p>O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p>
+                </div>
+                <div class="cafeteria-card">
+                    <img src="./static/img2.svg" alt="">
+                    <h3>Bolo De Chocolate</h3>
+                    <p>O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...</p>
+                </div>
+                <div class="cafeteria-card">
+                    <img src="./static/img3.svg" alt="">
+                    <h3>Pão De Mel</h3>
+                    <p>O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...</p>
+                </div>
+                <div class="cafeteria-card">
+                </div>
+            </div>
+            <div class="arrow-right"><button><img src="./static/Flecha Proximo.svg" alt="seta para direita"></button></div>
         </div>
     </div>
     <div class="div-contato">
@@ -84,12 +108,23 @@
                         <label for="Email">E-mail</label>
                         <input type="email" name="email" id="email">
                         <label for="Mensagem">Mensagem</label>
-                        <input type="text" name="mensagem" id="mensagem">
+                        <input type="text" name="mensagem" id="mensagem"  rows="4" cols="10">
                         <button class="contato-button">Enviar Mensagem<img src="./static/Union.svg" alt="seta-icon"></button>
                     </form>
                 </div>
             </div>
-    </div>
+            
+            <div class="div-contatos-mobile">
+                <h1>NOS ENCONTRE AQUI:</h1>
+                <div class="contatos-mobile-buttons">
+                    <button> <img src="./static/facebook-mobile.png" alt="facebook" class="img"></button>
+                    <button> <img src="./static/instagram-mobile.png" alt="instagram" class="img"></button>
+                    <button> <img src="./static/telephone-mobile.svg" alt="telephone" class="img"></button>
+                </div>
+            </div>
+        </div>
+
+
     <div class="footer">
         <h3 id="footer-left">Desenvolvido por Unect Jr</h3>
         <h3 id="footer-right">Todos os direitos reservados &#169</h3>

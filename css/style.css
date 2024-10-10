@@ -77,7 +77,6 @@ body{
 .div-header {
     background: no-repeat url(../static/BackGround.svg);
     background-size: cover;
-    /* width: 100%; */
     display: grid;
     grid-template-columns: 3fr 6fr;
     padding: 5% 0% 5% 5%;
@@ -216,24 +215,100 @@ body{
 
 /* Cafeteria */
 
-.div-cafeteria{
+.cafeteria{
+    width: auto;
+    height: 745px;
     background-color: #80451F;
-
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    height: 20rem;
 }
 
-.cafeteria-texts h1{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
+.cafeteria-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+.cafeteria-title h2{
+    font-family: Cormorant Garamond;
     font-size: 40px;
+    font-weight: 700;
     line-height: 48px;
     letter-spacing: 0.02em;
     text-align: left;
     color: #F0F0F0;
-    border-bottom: solid 2px #B2784A;
+    padding-top: 129px;
+    border-bottom: 3px solid;
+    border-color: #B2784A;
+}
+
+.carrossel{
+    width: 100%;
+    display: inline-flex;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 1103px;
+    height: 400px;
+}
+
+.cafeteria-card{
+    display: inline-block;
+    background-color: #F0F0F0;
+    height: 400px;
+    border-radius: 10px;
+    margin: 0 10px
+}
+
+.cafeteria-card img{
+    margin-top: 16px;
+    width: 313px;
+    height: 270px;
+}
+
+.cafeteria-card h3{
+    padding-top: 8px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: #1F0C00;
+}
+
+.cafeteria-card p{
+    padding-top: 4px;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #1F0C00;
+    width: 313px;
+}
+
+.cafeteria-card p,  h3, img{
+    margin: 0 16px;
+}
+
+.carrossel button{
+    background: none;
+}
+
+.arrow-left, .arrow-right{
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow-left{
+    padding-right: 180px;
+}
+
+.arrow-right{
+    padding-left: 180px;
 }
 
 /* Contatos */
@@ -295,7 +370,7 @@ body{
 .contato-forms{
     display: flex;
     flex-direction: column;
-    padding: 2rem 0rem 2rem 7rem;
+    padding: 2rem 0rem 2rem 4rem;
 }
 
 .contato-forms form{
@@ -318,16 +393,27 @@ body{
 }
 
 .contato-forms input{
-    width: 80%;
-    height: 70px;
-
+    font-family: "Open Sans", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #1F0C00;
+    
+    width: 90%;
+    height: 4.375rem;
     border: solid 1px #8F542E;
     border-radius: 0.4rem;
+    outline: none;
 }
 
 #mensagem{
-    height: 140px;
+    height: 8.75rem;
     margin-bottom: 2rem;
+    resize: none;
+    outline: none;
+    vertical-align: top;
+    white-space: pre-wrap;
 }
 
 .contato-forms button{
@@ -390,4 +476,172 @@ body{
 #footer-right{
     float: right;
     padding-right: 10%;
+}
+
+/* Menu- Mobile */
+
+.hidden {
+    display: none;
+}
+
+.menu-icon {
+    display: none; /* O ícone do menu só aparece em telas pequenas */
+}
+
+/* Contatos - Mobile */
+
+.div-contatos-mobile{
+    display: none;
+}
+
+@media (max-width: 390px) {
+    
+    body{
+        background-color: #F0F0F0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-left-buttons, .navbar-right-buttons {
+        display: none;
+    }
+
+    .navbar{
+        justify-content: flex-end;
+        gap: 3rem;
+    }
+
+    /* Header - Mobile */
+
+    .div-header{
+        background: no-repeat url(../static/Header-img.svg);
+        gap: 2rem;
+    }
+
+    .header-texts p{
+        display: none;
+    }
+
+    .header-texts h1{   
+        font-family: "Open Sans", serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        text-align: left;
+
+        width: 21.375rem;
+    }
+
+    .header-button{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /* Sobre Nós - Mobile */
+
+    .div-sobrenos h1{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    .sobrenos-body{
+        grid-template-columns: 3fr;
+    }
+
+    #sobrenos-xicaras{
+        display: none;
+    }
+
+    .sobrenos-texts p{
+        font-family: "Open Sans", serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    /* cafe-onda - mobile */
+
+    .div-cafe-onda img{
+        height: 6.872rem;
+        margin: 0;
+    }
+    
+    /* Cafeteria */
+
+    .cafeteria{
+        display: none;
+    }
+
+
+    /* Contato - Mobile */
+
+    .contato{
+        background-color: #F5F3ED;
+        grid-template-columns: 5fr;
+        margin: 5%;
+    }
+
+    .contato-links{
+        display: none;
+    }
+
+    .contato-texts h1{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    .contato-forms{
+        padding: 2rem 0rem 2rem 2rem;
+    }
+
+    .contato-forms label{
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    .div-contatos-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0 0 0;
+    }
+
+    .div-contatos-mobile h1{
+        font-family: "Open Sans", serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    .contatos-mobile-buttons{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 2rem 1rem 4rem 1rem;
+    }
 }
