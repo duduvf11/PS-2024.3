@@ -519,7 +519,7 @@ body{
     }
 
     /* Menu - Mobile */
-    
+
     .menu-icon {
         display: block;
     }
@@ -528,6 +528,26 @@ body{
         background-color: transparent;
         margin: 0 1rem 0 2rem;
         cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0  0 1rem 0;
+    }
+
+    .mobile-navbar-button{
+        display: block;
+        padding: 1.2rem 0 0 0;
+    }
+
+    .mobile-menu{
+        width: auto;
+    }
+
+    .open{
+        display: block;
     }
 
     .navbar-left-buttons, .navbar-right-buttons {
