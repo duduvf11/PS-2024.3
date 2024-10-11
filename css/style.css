@@ -535,11 +535,31 @@ body{
         flex-direction: column;
         text-align: center;
         padding: 0  0 1rem 0;
+        background-color: #F5F3ED;
+        list-style-type:none;
+    }
+
+    .mobile-menu li{
+        border-radius: 0.2rem;
+        box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 0.10);
+        padding: 0 0 1rem 0;
+        margin: 1rem 1rem 0 1rem;
     }
 
     .mobile-navbar-button{
+        font-family: "Open Sans", serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+        
         display: block;
-        padding: 1.2rem 0 0 0;
+        padding: 1.2rem 0 0 1rem;
+        text-decoration: none;
+        color: #1F0C00;
+
     }
 
     .mobile-menu{
