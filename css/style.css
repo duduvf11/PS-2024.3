@@ -165,6 +165,17 @@ body{
     
 }
 
+.sobrenos-h1-details{
+    content: "";
+    width: 10rem;
+    height: 1.5rem;
+    background-color: #FBC9A8;
+    position: absolute;
+    padding: 0% 0 0 4.8%;
+    margin: -1.5% 0 0 4%;
+    z-index: -1;
+}
+
 .sobrenos-body{
     display: grid;
     grid-template-columns: 0.15fr 3fr 3fr;
@@ -343,6 +354,17 @@ body{
 
     margin: 3% 0 2% 5%;
 
+}
+
+.contato-h1-details{
+    content: "";
+    width: 20rem;
+    height: 1.5rem;
+    background-color: #FBC9A8;
+    position: absolute;
+    padding: 0% 0 0 4.8%;
+    margin: -3.3% 0 0 4.5%;
+    z-index: -1;
 }
 
 .contato-links{
