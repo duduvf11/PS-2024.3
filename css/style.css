@@ -709,17 +709,36 @@ body{
     /* cafe-onda - mobile */
 
     .div-cafe-onda img{
-        height: 6.872rem;
+        height: 6rem;
         margin: 0 0 -4.4rem 0;
     }
     
     /* Cafeteria */
 
-   .carrossel{
-    display: none;
-   }
+    .cafeteria{
+        height: 38rem;
+    }
 
+    .container{
+        padding:  6rem 0.5rem 6rem 0.5rem;
+    }
 
+    .card-item {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .card-item img{
+        width: 197.5px;
+        height: 170.77px;
+        top: 10.12px;
+        left: 60.06px;
+    }
+
+    .card-block{
+        padding: 3rem;
+        width: 3rem;
+    }
+    
     /* Contato - Mobile */
 
     .contato{
